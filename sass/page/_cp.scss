@@ -383,3 +383,52 @@ div.tag{
         }
     }
 }
+
+//
+
+// slick._scss
+// adSlider
+.cpimglist {
+    clear:both;
+    margin-bottom: 2em;
+    @include gutter(70px);
+    @include screen('mobile') {
+        @include gutter();
+    }
+    .slick-prev {
+        left: -30px;
+        background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat RGBA(0, 0, 0, 0.5);
+        background-size: 80%;
+        top:45%;
+        border-radius: 3px;
+    }
+    .slick-next {
+        right: -30px;
+        background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat RGBA(0, 0, 0, 0.5);
+        background-size: 80%;
+        top:45%;
+        border-radius: 3px;
+    }
+    .img-container {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0px 15px;
+        vertical-align: middle;
+        a {
+            display: block;
+            img {
+                margin: 0 auto;
+                object-fit: cotain;
+            }
+        }
+    }
+    .slick-dots {
+        bottom: -30px !important;
+        position: static;
+        li button:before{
+          width: 10px;
+          height: 10px;  
+      }
+  }
+}
+

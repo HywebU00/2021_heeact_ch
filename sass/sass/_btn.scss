@@ -74,6 +74,7 @@ $btn-radius:.4em;
 .btn-blue {
     @extend %btn;
     @include btn_setting($color-blue, #FFF);
+    border: none;
 }
 .btn-yellow {
     @extend %btn;

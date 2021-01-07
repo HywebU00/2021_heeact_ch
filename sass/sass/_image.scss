@@ -8,6 +8,9 @@ img {
         @include border-radius(50%);
     }
 }
+
+
+
 // 設定img 在IE9+ SAFARI FIREFOX CHROME 可以object-fit
 /*for IE */
 .imgOuter{

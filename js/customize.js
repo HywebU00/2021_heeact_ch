@@ -2,7 +2,7 @@
 
 $(function() {
 	 //燈箱slick+lightBox組合
-    $('.cp_slider').slick({
+     $('.cp_slider').slick({
         dots: true,
         infinite: true,
         speed: 500,
@@ -39,7 +39,7 @@ $(function() {
             }
         }]
     });
-    $('.cp_slider').slickLightbox({
+     $('.cp_slider').slickLightbox({
         caption: 'caption',
         useHistoryApi: 'true',
         lazy: true
@@ -55,6 +55,46 @@ $('.mpSlider').slick({
     autoplay: true,
     fade: true,
     cssEase: 'ease'
+});
+
+//
+
+// 請放置customize.js
+// 廣告輪播
+$('.cpimglist').slick({
+    mobileFirst: true,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrow: true,
+    lazyLoaded: true,
+    lazyLoad: 'ondemand',
+    ease: 'ease',
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true
+        }
+    },{
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: true
+        }
+    },{
+        breakpoint: 575,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true
+        }
+    }]
 });
 
 

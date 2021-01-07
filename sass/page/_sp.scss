@@ -604,3 +604,63 @@
 	}
 }
 
+.book {
+	@include clearfix;
+	padding-top: 1em;
+	text-align: center;
+	padding-bottom: 1em;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: left;
+
+		@include screen('tablet') {
+			text-align: left;
+		}
+		a {
+			h3 {
+				&:hover,
+				&:focus {
+					color: $primaryColor;
+				}
+			}
+		}
+		li {
+			width: 24.5%;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			margin: 0px auto 2em;
+			@include box-sizing;
+			@include gutter;
+			@include screen('tablet') {
+				width: 32%;
+			}
+			@include screen('mobile') {
+				width: 48%;
+			}
+			h3 {
+				font-size: .938em;
+				color: $color-word;
+				margin: .5em 0;
+				&:hover,
+				&:focus {
+					color: $primaryColor;
+				}
+			}
+			.bookOuter {
+				@include aspect-ratio(7, 10);
+				border: 1px solid #DDD;
+				position: relative;
+				img {
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					position: absolute;
+				}
+			}
+		}
+	}
+}
