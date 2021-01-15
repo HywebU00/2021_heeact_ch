@@ -183,6 +183,9 @@
                     h3 {
                         color: $color-orange;
                     }
+                    h4 {
+                        color:#099;
+                    }
                 }
             }
             p {
@@ -209,6 +212,11 @@
                 line-height: 1.45em;
                 text-align: center;
                 color: #000;
+            }
+            h4{
+                color: #000;
+                margin: 1em 0 .5em;
+
             }
             .bookOuter {
                 @include aspect-ratio(4, 3);
