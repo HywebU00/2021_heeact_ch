@@ -64,6 +64,11 @@ h1.title{
     a {
         @include aSetting;
     }
+    p{
+        a{
+            word-break: break-all;
+        }
+    }
     .info {
         font-size: 0.938em;
         line-height: 1.5em;
