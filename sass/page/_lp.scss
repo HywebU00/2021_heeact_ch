@@ -154,4 +154,42 @@
             }
         }
     }
+
+    .head {
+        @include clearfix;
+        margin-bottom: 0;
+        @include border-radius(6px);
+        padding: 1em 1.5em 1em 2em;
+        @include box-sizing;
+        background: rgba(238,238,238, 1);
+        background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
+        p{
+            font-size: 1.063em;
+            line-height: 1.8em;
+        }
+        .btn-blue{
+            @include screen('mobile') {
+                width: 100%;
+            }
+        }
+    }
+    .link-btn{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                display: inline-block;
+                @include screen('mobile') {
+                    display: block;
+                }
+            }
+        }
+    }
+    .share{
+        margin: 0 2em 1.5em;
+    }
+
 }

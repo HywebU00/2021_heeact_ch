@@ -64,7 +64,7 @@
         @include clearfix;
         margin-bottom: 2em;
         @include border-radius(6px);
-        padding: 1em;
+        padding: 1em 2em;
         background-color: rgb(255, 255, 255);
         @include filter-gradient(#ffffff, #eeeeee, vertical);
         @include background-image(linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(238, 238, 238, 1) 100%));
@@ -82,9 +82,12 @@
         }
     }
     p {
-        line-height: 1.75em;
-        font-size: .938em;
+        line-height: 1.8em;
+        font-size: 1.063em;
         overflow: hidden;
+    }
+    h3{
+        font-size: 1.35em;
     }
     @include screen('mobile') {
         a.btn {
@@ -93,11 +96,11 @@
         }
     }
     img.float_left {
-        max-width: 300px;
+        max-width: 240px;
         height: auto;
         float: left;
         display: block;
-        margin: 0px 15px 15px 0;
+        margin: 0px 30px 15px 0;
         @include screen('mobile') {
             float: none;
             margin: 0px auto 15px;
