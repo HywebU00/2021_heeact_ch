@@ -169,12 +169,14 @@
             font-size: 1.063em;
             line-height: 1.8em;
         }
-        .btn-blue{
-            @include screen('mobile') {
-                width: 100%;
-            }
+
+    }
+    .btn-blue{
+        @include screen('mobile') {
+            width: 100%;
         }
     }
+
     .link-btn{
         ul{
             margin: 0;
@@ -190,6 +192,20 @@
     }
     .share{
         margin: 0 2em 1.5em;
+    }
+
+    .order_epaper{
+        background: #fff9ea;
+        border-radius: 6px;
+        padding: 1em 2em;
+        margin: 1em 0;
+        label{
+            background: url('../images/order_epaper.png')no-repeat left top;
+            background-size: 44px auto;
+            padding-left: 50px;
+            height: 44px;
+            line-height: 44px;
+        }
     }
 
 }
