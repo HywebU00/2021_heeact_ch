@@ -316,6 +316,12 @@ div.tag{
             &[href$="odt"]:after {
                 background: url(../images/basic/icon_odt.jpg);
             }
+            &[href$="odp"]:after {
+                background: url(../images/basic/icon_odp.jpg);
+            }
+            &[href$="ods"]:after {
+                background: url(../images/basic/icon_ods.jpg);
+            }
         }
     }
 }
