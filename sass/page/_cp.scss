@@ -313,6 +313,9 @@ div.tag{
             &[href$="png"]:after {
                 background: url(../images/basic/icon_png.jpg);
             }
+            &[href$="odt"]:after {
+                background: url(../images/basic/icon_odt.jpg);
+            }
         }
     }
 }
